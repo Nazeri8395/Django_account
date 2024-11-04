@@ -37,6 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    #apps
+    'accounts',
+    
+    #installer
+    # 'rosetta',
 ]
 
 MIDDLEWARE = [
@@ -128,4 +134,7 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-AUTH_USER="accounts.CustomUser"
+AUTH_USER_MODEL = "accounts.CustomUser"
+
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '[::1]']
+
